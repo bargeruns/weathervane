@@ -1,13 +1,11 @@
 import axios from 'axios';
 
-const API_KEY = 'e4b296018d02fb8367ecba87ebe2bce6';
-const URL = `http://api.openweathermap.org/data/2.5/forecast?mode=json&appid=${API_KEY}`;
+const WEATHER_API = 'https://weathervane-api.herokuapp.com';
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 export function fetchWeather(city) {
-  const url = `${URL}&q=${city},us&units=imperial`;
-  const request = axios.get(url);
+  const request = axios.get(`${WEATHER_API}/forecast?city=${city}`);
 
   return {
     type: FETCH_WEATHER,
