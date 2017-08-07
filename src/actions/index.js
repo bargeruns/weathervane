@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const WEATHER_API = 'https://weathervane-api.herokuapp.com';
+//const WEATHER_API = 'https://weathervane-api.herokuapp.com';
+const WEATHER_API = 'http://localhost:9000';
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 

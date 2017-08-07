@@ -7,17 +7,7 @@ export class WeatherList extends Component {
 
   render() {
     return (
-      <table className="table table-hover">
-        <thead>
-          <tr>
-            <th>City</th>
-            <th>Temperature</th>
-            <th>Humidity</th>
-            <th>Pressure</th>
-          </tr>
-        </thead>
-        <tbody>{this.props.weather.map(this.renderWeather)}</tbody>
-      </table>
+      <div>{this.props.weather.map(this.renderWeather)}</div>
     );
   }
 
@@ -29,21 +19,21 @@ export class WeatherList extends Component {
     const humidity = list.map(weather => weather.main.humidity);
 
     return (
-      <tr key={name}>
-        <td>
+      <div className='city-container' key={name}>
+        <p className="title">{name}</p>
+        <div className='city-row'>
           <GoogleMap lat={lat} lon={lon}/>
-          {name}
-        </td>
-        <td>
-          <Chart data={temp} color='red' unit={'\u2109'}/>
-        </td>
-        <td>
-          <Chart data={humidity} color='blue' unit='%'/>
-        </td>
-        <td>
-          <Chart data={pressure} color='gray' unit='hPa'/>
-        </td>
-      </tr>
+          <div className='city-data'>
+            <Chart data={temp} color='red' unit={'\u2109'}/>
+          </div>
+          <div className='city-data'>
+            <Chart data={humidity} color='blue' unit='%'/>
+          </div>
+          <div className='city-data'>
+            <Chart data={pressure} color='gray' unit='hPa'/>
+          </div>
+        </div>
+      </div>
     );
   }
 }

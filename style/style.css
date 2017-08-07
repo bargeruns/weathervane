@@ -1,3 +1,33 @@
+.city-container {
+  border: 1px solid #f7f7f9;
+  border-radius: 3px;
+}
+p.title {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f7f7f9;
+}
+.city-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.city-row * {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.city-row .map-data {
+  height: 140px;
+  width: 180px;
+}
+
+svg {
+  height: 140px;
+  width: 180px;
+}
+
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
@@ -18,4 +48,22 @@ th:last-child {
 
 .input-group {
   margin: 20px 0px;
+}
+
+@media (max-width: 770px) {
+  .city-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    height: 200px;
+    width: 220px;
+  }
+
+  .city-row .map-data {
+    height: 200px;
+    width: 220px;
+  }
 }
