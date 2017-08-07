@@ -1,25 +1,15 @@
-# ReduxSimpleStarter
+# WeatherVane
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+A weather forecast dashboard written in React + Redux.
 
-### Getting Started
+## Core Technologies
 
-There are two methods for getting started with this repo.
+At its core, WeatherVane relies on the following technologies:
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+- ReactJS
+- Redux
+- Bootstrap 4
+- OpenWeatherMap
+- Google Maps
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+You can view the full list of dependencies in `package.json`.
