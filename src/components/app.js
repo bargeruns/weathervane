@@ -10,7 +10,7 @@ export default class App extends Component {
         <nav className="navbar navbar-light bg-faded">
           <a className="navbar-brand" href="/">WeatherVane</a>
           <div className="nav-item">
-            <a className="nav-link" href=""><i className="fa fa-github fa-2x"></i> View on GitHub</a>
+            <a className="nav-link" href="https://github.com/bargeruns/weathervane"><i className="fa fa-github fa-2x"></i> View on GitHub</a>
           </div>
         </nav>
         <SearchBar />
